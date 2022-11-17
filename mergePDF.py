@@ -1,7 +1,7 @@
 import PyPDF2
 def merge_pdf():
     n = int(input("How many pdfs do you want to merge? "))
-    pdfs = [input(f'Enter PDF {i+1} ') for i in range(0, n)]
+    pdfs = [input(f'Enter path of PDF {i+1} ') for i in range(0, n)]
     pdf_writer = PyPDF2.PdfFileWriter()
     for pdf in pdfs:
         f = open(pdf,'rb')
